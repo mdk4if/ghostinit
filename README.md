@@ -120,5 +120,3 @@ To upload this `README.md` to your GitHub repository (`https://github.com/mdk4if
 
 6. **Verify on GitHub**:
    - Visit `https://github.com/mdk4if/ghostinit` to confirm that `README.md` appears in the repository.
-
-If you encounter any errors during the push (e.g., authentication or conflicts), let me know the specific error message, and I’ll guide you through resolving it!
