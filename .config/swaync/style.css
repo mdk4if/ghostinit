@@ -1,0 +1,55 @@
+* {
+    all: unset;
+    font-family: "FiraCode Nerd font", sans-serif;
+    font-size: 14px;
+}
+
+.notification {
+    background: rgba(30, 30, 30, 0.9);
+    border: 1px solid rgba(100, 100, 100, 0.5);
+    border-radius: 8px;
+    padding: 10px;
+    margin: 5px;
+    color: #ffffff;
+}
+
+.notification-content {
+    padding: 5px;
+}
+
+.notification-icon {
+    margin-right: 10px;
+}
+
+.notification-title {
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.notification-body {
+    color: #cccccc;
+}
+
+.control-center {
+    background: rgba(30, 30, 30, 0.9);
+    border: 1px solid rgba(100, 100, 100, 0.5);
+    border-radius: 8px;
+    padding: 10px;
+    margin: 5px;
+}
+
+.control-center-list {
+    background: transparent;
+}
+
+button {
+    background: rgba(50, 50, 50, 0.8);
+    border-radius: 4px;
+    padding: 5px;
+    margin: 2px;
+    color: #ffffff;
+}
+
+button:hover {
+    background: rgba(100, 100, 100, 0.8);
+}

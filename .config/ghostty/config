@@ -1,0 +1,11 @@
+theme = catppuccin-mocha
+background-opacity = 0.7  
+font-family = FiraCode Nerd Font
+font-size = 13
+term = xterm-256color
+background = 1a1b26
+font-thicken = true
+cursor-color = f5e0dc
+cursor-style = block
+mouse-hide-while-typing=true
+background-blur=true

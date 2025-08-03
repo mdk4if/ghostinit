@@ -1,0 +1,92 @@
+@theme "colors.rasi"
+* {
+    font: "FiraCode Nerd Font 12";
+    background-color: transparent;
+    text-color: @fg0;
+
+    margin: 0px;
+    padding: 0px;
+    spacing: 0px;
+}
+
+window {
+    location: north;
+    y-offset: calc(50% - 176px);
+    width: 480;
+    border-radius: 24px;
+}
+
+mainbox {
+    padding: 12px;
+}
+
+inputbar {
+    background-color: @bg1;
+    border-color: @bg3;
+
+    border: 2px;
+    border-radius: 16px;
+
+    padding: 8px 16px;
+    spacing: 8px;
+    children: [ prompt, entry ];
+}
+
+prompt {
+    text-color: @fg2;
+}
+
+entry {
+    placeholder: "Search";
+    placeholder-color: @fg3;
+}
+
+message {
+    margin: 12px 0 0;
+    border-radius: 16px;
+    border-color: @bg2;
+    background-color: @bg2;
+}
+
+textbox {
+    padding: 8px 24px;
+}
+
+listview {
+    margin: 12px 0 0;
+    lines: 8;
+    columns: 1;
+    fixed-height: true;
+}
+
+element {
+    padding: 8px 16px;
+    spacing: 8px;
+    border-radius: 16px;
+
+    /* Add this children line for icon support */
+    children: [ element-icon, element-text ];
+}
+
+element normal active {
+    text-color: @bg3;
+}
+
+element alternate active {
+    text-color: @bg3;
+}
+
+element selected normal, element selected active {
+    background-color: @bg3;
+}
+
+/* Enhanced icon styling */
+element-icon {
+    size: 1.2em;
+    vertical-align: 0.1;
+    margin: 0px 8px 0px 0px;
+}
+
+element-text {
+    text-color: inherit;
+}
