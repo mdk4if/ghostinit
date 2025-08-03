@@ -1,7 +1,3 @@
-Below is a `README.md` file for your Bash script, which automates the setup of a Hyprland desktop environment on an Arch Linux system with NVIDIA drivers. The README provides an overview, usage instructions, prerequisites, and other relevant details in a clear and professional format.
-
-
-
 # Hyprland Setup Script
 
 This Bash script automates the installation and configuration of a Hyprland desktop environment on Arch Linux systems with NVIDIA proprietary drivers. It installs necessary packages, sets up the `yay` AUR helper, copies configuration files, and configures system services.
