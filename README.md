@@ -24,16 +24,15 @@ This Bash script automates the installation and configuration of a Hyprland desk
    git clone https://github.com/mdk4if/ghostinit.git
    cd ghostinit
    ```
-   Replace `https://github.com/mdk4if/ghostinit.git` with your repository URL.
 
 2. **Make the Script Executable**:
    ```bash
-   chmod +x hyprland_setup.sh
+   chmod +x setup.sh
    ```
 
 3. **Run the Script**:
    ```bash
-   ./hyprland_setup.sh [-v]
+   ./setup.sh [-v]
    ```
    - `-v`: Enable verbose output (enabled by default).
 
@@ -65,58 +64,7 @@ This Bash script automates the installation and configuration of a Hyprland desk
 - **Services**: `NetworkManager` and `power-profiles-daemon` are enabled and started automatically.
 - **zsh**: The script sets `zsh` as the default shell. Ensure you have a compatible terminal (e.g., `foot` or `ghostty`) installed.
 
-## Troubleshooting
-- **Authentication Errors**: If you encounter Git authentication issues, use a Personal Access Token (PAT) or SSH key for GitHub operations. See [GitHub's documentation](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token) for details.
-- **Merge Conflicts**: If pushing to GitHub fails due to remote changes, run:
-  ```bash
-  git pull origin main --rebase
-  ```
-  Then resolve conflicts and retry:
-  ```bash
-  git push -u origin main
-  ```
-- **Package Installation Failures**: Ensure a stable internet connection and that the Arch Linux mirrors are up-to-date (`sudo pacman -Syy`).
-- **Missing Configurations**: If no `.config` directory or `CONFIG_GIT_REPO` is provided, the script will exit with an error.
-
 ## Contributing
 Contributions are welcome! Please fork the repository, make changes, and submit a pull request.
-
-## License
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
-
-
-### Next Steps
-To upload this `README.md` to your GitHub repository (`https://github.com/mdk4if/ghostinit.git`), follow these steps in your terminal:
-
-1. **Navigate to Your Repository**:
-   ```bash
-   cd /path/to/your/ghostinit
-   ```
-
-2. **Add the README.md File**:
-   ```bash
-   git add README.md
-   ```
-
-3. **Commit the Changes**:
-   ```bash
-   git commit -m "Add README.md for Hyprland setup script"
-   ```
-
-4. **Resolve the Previous Push Error**:
-   Since you encountered a `rejected` push error, pull the remote changes first:
-   ```bash
-   git pull origin main --rebase
-   ```
-   - If conflicts occur, resolve them as described in the previous response (edit conflicting files, `git add <file>`, `git rebase --continue`).
-   - If no conflicts, the pull will complete automatically.
-
-5. **Push to GitHub**:
-   ```bash
-   git push -u origin main
-   ```
-   - Use your GitHub username (`mdk4if`) and a Personal Access Token (PAT) when prompted, as discussed earlier. Alternatively, ensure you’ve set up SSH authentication to avoid credential prompts.
-
 6. **Verify on GitHub**:
    - Visit `https://github.com/mdk4if/ghostinit` to confirm that `README.md` appears in the repository.
