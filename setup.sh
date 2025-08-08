@@ -173,7 +173,6 @@ if [[ -d "$CONFIG_DIR" && -n "$(ls -A "$CONFIG_DIR")" ]]; then
 fi
 
 # Copy Hyprland configuration files
-    rm -rf /tmp/hyprland-config
 if [[ -d "./.config" ]]; then
     log "Copying local configuration files..."
     cp -r ./.config/* "$CONFIG_DIR/" || {
