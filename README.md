@@ -16,7 +16,6 @@ This Bash script automates the installation and configuration of a Hyprland desk
 - **NVIDIA GPU with Proprietary Drivers**: The script assumes an NVIDIA GPU with proprietary drivers installed.
 - **Internet Connection**: Required for package installation and Git operations.
 - **Sudo Privileges**: The script must be run as a non-root user with `sudo` access.
-- **Git Repository (Optional)**: If using custom configuration files, set the `CONFIG_GIT_REPO` environment variable to a Git repository URL containing a `.config` directory.
 
 ## Usage
 1. **Clone or Download the Script**:
@@ -35,16 +34,7 @@ This Bash script automates the installation and configuration of a Hyprland desk
    ./setup.sh [-v]
    ```
    - `-v`: Enable verbose output (enabled by default).
-
-4. **Optional: Specify Configuration Repository**:
-   If you have a Git repository with Hyprland configuration files, set the `CONFIG_GIT_REPO` environment variable:
-   ```bash
-   export CONFIG_GIT_REPO="https://github.com/your-username/your-config-repo.git"
-   ./hyprland_setup.sh
-   ```
-   Alternatively, place configuration files in a `.config` directory in the same folder as the script.
-
-5. **Log Out and Start Hyprland**:
+4. **Log Out and Start Hyprland**:
    After the script completes, log out and select Hyprland from your display manager (e.g., GDM, SDDM), or start it manually:
    ```bash
    Hyprland
