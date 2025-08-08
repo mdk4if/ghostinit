@@ -173,18 +173,8 @@ if [[ -d "$CONFIG_DIR" && -n "$(ls -A "$CONFIG_DIR")" ]]; then
 fi
 
 # Copy Hyprland configuration files
-if [[ -n "$CONFIG_GIT_REPO" ]]; then
-    log "Cloning configuration files from $CONFIG_GIT_REPO..."
-    git clone "$CONFIG_GIT_REPO" /tmp/hyprland-config || {
-        echo "Error: Failed to clone configuration repository."
-        exit 1
-    }
-    cp -r /tmp/hyprland-config/.config/* "$CONFIG_DIR/" || {
-        echo "Error: Failed to copy configuration files from repository."
-        exit 1
-    }
     rm -rf /tmp/hyprland-config
-elif [[ -d "./.config" ]]; then
+if [[ -d "./.config" ]]; then
     log "Copying local configuration files..."
     cp -r ./.config/* "$CONFIG_DIR/" || {
         echo "Error: Failed to copy local configuration files."
